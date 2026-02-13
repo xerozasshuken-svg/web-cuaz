@@ -74,12 +74,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 180px;
-  max-width: 300px;
+  width: 25vw;
+  max-width: 320px;
   height: auto;
-  min-height: 200px;
+  min-height: 100px;
+  aspect-ratio: 4/3;
   background: white;
-  padding: 20px;
+  padding: 25px;
   left: 50%;
   right: 50%;
   transform: translate(-50%,-50%) scale(0.8);
@@ -92,29 +93,36 @@ body {
 
 /* -------- BOTONES -------- */
 .choices {
-  position: absolute;
-  top: 200%;
+  position: fixed;
+  top: 25vh;
   left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  transform: translate(-50%,20px);
   display: flex;
-  gap: 15px;
+  gap: 10vh;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
-  
+    
 }
 .choices button{
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 25px;
-    border: none;
+    padding: 1vh 4vh;
+    font-size: 21px;
+    border-radius: 30px;
+    border: 3px solid #F21B5C;
+    box-shadow: 0 5px 15px rgba(240, 23, 23, 0.877);
+    background: transparent;
+    color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
 }
 .choices.show{
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translate(-50%,0);
   pointer-events: auto;
 }
+
+
 
 /* -------- ESTADOS -------- */
 .hidden {
@@ -130,7 +138,7 @@ body {
 
 .fade-out {
   opacity: 0;
-  transform: scale(0.5);
+  transform: translate(-50%,-50%) scale(0.5);
 }
 
 @media(max-width:480px){
