@@ -17,7 +17,7 @@ body {
   inset: 0;
   background: radial-gradient(
     circle at center,
-    #2b2b2b 0%,
+    #ee3030 0%,
     #0f0f0f 70%
   );
   transform-origin: center;
@@ -32,7 +32,7 @@ body {
   opacity: 1;
   transform: scale(1);
 }
-
+/* -------- ESCENA  -------- */
 .scene {
   position: relative;
   width: 90vw;
