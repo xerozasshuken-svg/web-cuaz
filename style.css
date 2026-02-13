@@ -143,7 +143,7 @@ body {
 
 @media(max-width:480px){
     .letter{
-      width: 90vw;
+      width: 150vw;
       aspect-ratio: 5/4;
     }
     .scene{
@@ -162,5 +162,6 @@ body {
         flex-direction: column;
     }
 }
+
 
 
