@@ -15,7 +15,7 @@ body {
 .bg-heart{
   position: fixed;
   width: 150vw;
-  max-width: 750px;
+  max-width: 725px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
@@ -26,15 +26,19 @@ body {
 }
 .bg-heart.show{
   opacity: 1;
+  transition: 1.6s ease, trasform 1.6s ease;
   transform: translate(-50%,-50%) scale(1);
 }
 /* -------- ESCENA  -------- */
 .scene {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 90vw;
   max-width: 360px;
-  height: 70vh;
-  max-height: 500px;
+  height: auto;
+  
 }
 
 /* -------- SOBRE -------- */
@@ -68,6 +72,8 @@ body {
 /* -------- PAPEL -------- */
 .letter {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 180px;
   max-width: 300px;
   height: auto;
@@ -87,20 +93,27 @@ body {
 /* -------- BOTONES -------- */
 .choices {
   position: absolute;
-  bottom: -5vh;
+  top: 200%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(10px);
   display: flex;
   gap: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
   
 }
-
 .choices button{
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
+}
+.choices.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
 }
 
 /* -------- ESTADOS -------- */
