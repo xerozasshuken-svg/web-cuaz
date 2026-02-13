@@ -14,8 +14,8 @@ body {
 /* -------- FONDO(corazon)  -------- */
 .bg-heart{
   position: fixed;
-  width: 200vw;
-  max-width: 850px;
+  width: 150vw;
+  max-width: 750px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
