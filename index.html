@@ -9,7 +9,23 @@
 
 <body>
 
-<div id="background" class="background hidden"></div>
+<svg class="bg-heart hidden" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ED2626"/>
+        <stop offset="100%" stop-color="#FF619D"/>
+
+    </linearGradient>
+  </defs>
+
+  <path fill="url(#heartGradient)"
+        d="M50 90 
+           C20 60 0 40 25 25 
+           C40 15 50 30 50 30 
+           C50 30 60 15 75 25 
+           C100 40 80 60 50 90 Z"/>
+</svg>
+
 
 <div class="scene">
     <div id="envelope" class="envelope hidden">
