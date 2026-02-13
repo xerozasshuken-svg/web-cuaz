@@ -1,12 +1,12 @@
 const envelope = document.getElementById("envelope");
 const letter = document.getElementById("letter");
 const choices = document.getElementById("choices");
-const background = document.getElementById("background");
+const heart = document.querySelector(".bg-heart");
 
 //Circulo de fondo
 setTimeout(() => {
-  background.classList.remove("hidden");
-  background.classList.add("show");
+  heart.classList.remove("hidden");
+  heart.classList.add("show");
 }, 200);
 // Aparece el sobre
 setTimeout(() => {
