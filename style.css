@@ -11,6 +11,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* -------- FONDO  -------- */
+.background{
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    #2b2b2b 0%,
+    #0f0f0f 70%
+  );
+  transform-origin: center;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  z-index: -1;
+}
+.background.hidden{
+  opacity: 0;
+  transform: scale(0.8);
+}
+.background.show{
+  opacity: 1;
+  transform: scale(1);
+}
 
 .scene {
   position: relative;
