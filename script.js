@@ -1,13 +1,12 @@
 const envelope = document.getElementById("envelope");
-const letter = document.getElementById("letter");
+const letter = document.querySelector(".letter");
 const choices = document.getElementById("choices");
 const heart = document.querySelector(".bg-heart");
 
 //Circulo de fondo
 setTimeout(() => {
-  heart.classList.remove("hidden");
   heart.classList.add("show");
-}, 200);
+}, 300);
 // Aparece el sobre
 setTimeout(() => {
   envelope.classList.remove("hidden");
@@ -21,9 +20,8 @@ setTimeout(() => {
 
 //Sale el papel
 setTimeout(() => {
-  letter.classList.remove("hidden");
   letter.classList.add("show");
-}, 2600);
+}, 2200);
 
 //El sobre desaparece
 setTimeout(() => {
@@ -34,7 +32,7 @@ setTimeout(() => {
 setTimeout(() => {
   choices.classList.remove("hidden");
   choices.classList.add("show");
-}, 4200);
+}, 1000);
 
 //Al elegir opción
 document.querySelectorAll(".choices button").forEach(btn => {
