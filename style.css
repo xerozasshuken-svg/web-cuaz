@@ -15,14 +15,15 @@ body {
 .background{
   position: fixed;
   inset: 0;
-  background: radial-gradient(
-    circle at center,
-    #ee3030 0%,
-    #0f0f0f 70%
-  );
-  transform-origin: center;
+  background: linear-gradient(135deg,#2b2b2b,#0f0f0f);
+  clip-path: path("M 50 90 C 20 60, 0 40, 25 25 C 40 15, 50 30, 50 30 C 50 30, 60 15, 75 25 C 100 40, 80 60, 50 90 Z");
   transition: opacity 1.2s ease, transform 1.2s ease;
-  z-index: -1;
+
+  width: 300px;
+  height: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
 }
 .background.hidden{
   opacity: 0;
@@ -30,7 +31,7 @@ body {
 }
 .background.show{
   opacity: 1;
-  transform: scale(1);
+  transform: translate(-50%,-50%) scale(1);
 }
 /* -------- ESCENA  -------- */
 .scene {
@@ -125,7 +126,11 @@ body {
 }
 
 @media(max-width:480px){
-    body{
+    .scene{
+      align-items: flex-start;
+      padding-top: 20vh;
+    }
+    .body{
         align-items: flex-start;
         padding-top: 10vh;
     }
