@@ -15,7 +15,7 @@ body {
 .bg-heart{
   position: fixed;
   width: 250vw;
-  max-width: 1200px;
+  max-width: 880px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
@@ -137,5 +137,6 @@ body {
         flex-direction: column;
     }
 }
+
 
 
