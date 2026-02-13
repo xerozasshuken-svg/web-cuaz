@@ -3,30 +3,30 @@ const letter = document.querySelector(".letter");
 const choices = document.getElementById("choices");
 const heart = document.querySelector(".bg-heart");
 
-//Circulo de fondo
+//corazon de fondo
 setTimeout(() => {
   heart.classList.add("show");
-}, 300);
+}, 400);
 // Aparece el sobre
 setTimeout(() => {
   envelope.classList.remove("hidden");
   envelope.classList.add("show");
-}, 500);
+}, 700);
 
 //Se abre el sobre
 setTimeout(() => {
   envelope.classList.add("open");
-}, 1800);
+}, 1950);
 
 //Sale el papel
 setTimeout(() => {
   letter.classList.add("show");
-}, 2200);
+}, 2500);
 
 //El sobre desaparece
 setTimeout(() => {
   envelope.classList.add("fade-out");
-}, 3400);
+}, 2950);
 
 //Aparecen botones
 setTimeout(() => {
